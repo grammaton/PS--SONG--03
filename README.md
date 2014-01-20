@@ -1,9 +1,8 @@
 PS--SONG--03
 ============
 
-### Electroacoustic music for choir
+# Electroacoustic music for choir
 
-## To do list
 
 License
 =======
