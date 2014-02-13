@@ -10,13 +10,13 @@ csound -s -d -3 -m0 -b800 -B800
 <CsInstruments>
 
 sr	= 48000
-kr	= 4800
-ksmps	= 10
+kr	= 48000
+ksmps	= 1
 nchnls	= 2
 0dbfs	= 1
 
         instr 1
-ksweepl linseg	293.665, p3, 466,164
+ksweepl linseg	293.665, p3, 466.164
 ksweepr linseg	293.665, p3, 233.082
 al      oscili   0dbfs*.707, ksweepl, 1
 ar      oscili   0dbfs*.707, ksweepr, 1
