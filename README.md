@@ -1,6 +1,6 @@
 #PS: SONG#03
 
-Electroacoustic music for Mezzosoprano, SSA Choir & Electronics
+Electroacoustic music for Mezzosoprano & SSA Choir
 Music By Paquale Citera & Giuseppe Silvi
 
 ###License
