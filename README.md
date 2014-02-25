@@ -1,13 +1,8 @@
-PS--SONG--03
-============
+#PS: SONG#03
 
 Electroacoustic music for Mezzosoprano, SSA Choir & Electronics
 Music By Paquale Citera & Giuseppe Silvi
 
-License
-=======
-
-PS: Song#03 by Pasquale Citera, Giuseppe Silvi is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-Based on a work at https://github.com/grammaton/PS--SONG--03.
+###License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">PS: Song#03</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/grammaton/PS--SONG--03" property="cc:attributionName" rel="cc:attributionURL">Pasquale Citera, Giuseppe Silvi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/grammaton/PS--SONG--03" rel="dct:source">https://github.com/grammaton/PS--SONG--03</a>.
