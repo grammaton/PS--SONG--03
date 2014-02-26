@@ -19,7 +19,7 @@ sopIbMusic = \relative c'
 				
 				s4
 					
- g'4~_\markup{\dynamic pppp \italic \small { sottovoce } } 	g1~ g4~
+ g'4~\pppp	g1~ g4~
 %0:25 
 	g2.~
 %0:30	
@@ -66,7 +66,7 @@ sopIbMusic = \relative c'
 	\times 4/7 { 
 				r2 r4 c!8\>_\markup{\dynamic pp \italic \small { quasi declamato } }
 				}
-	\times 4/5 {c8 [c c c c] 
+	\times 4/5 {c8 [c c] c4  
 	
 				}
 				
@@ -99,8 +99,8 @@ sopIbMusic = \relative c'
 			\unHideNotes	
 		  
 		 				
-						  
-			r4 	r8 r16		  
+			\stemUp			  
+			s4^\markup{\italic \small {Voci divise}} 	s8 s16		  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -122,6 +122,14 @@ sopIbMusic = \relative c'
 		   \override Beam #'grow-direction = #'()
 
 
+
+s1 s4
+s1 s4
+\hideNotes
+c1 s4
+c1 s4
+
+\unHideNotes
 
 		
 		  
@@ -159,8 +167,8 @@ sopIIbMusic = \relative c'
 			\unHideNotes	
 		  
 		 				
-						  
-			r4 	r4			  
+			\stemUp			  
+			s4 	s4			  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -206,12 +214,12 @@ sopIIIbMusic = \relative c'
 			\unHideNotes	
 		  
 		 				
-						  
-			r4 	r4	r16	  
+			\stemUp			  
+			s4 	s4	s16	  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
-			f'32  [
+			f32  [
 			\override NoteHead #'transparent = ##t
 			
 				d d d  d d d d  

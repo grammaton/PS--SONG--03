@@ -80,38 +80,32 @@ g8-. [ 	d8~--]
 		  
 \break		  
 		  
-		 				 \stopStaff
-							\revert Staff.StaffSymbol #'line-count
-						  \startStaff	
-		  
-%1:00
-		  
-	
-		  %\override Beam #'grow-direction = #LEFT
-		  %\override Beam #'grow-direction = #'()
-	%\override Stem #'length-fraction = #'5.5 
+		 				 	
+		  	\override NoteHead #'no-ledgers = ##t
+
 	
 \crOn
 			\times 16/14 
 			{d32_\markup{\italic \small {quasi impercettibile}}\pppp  [
 			\override NoteHead #'transparent = ##t
-			\override NoteHead #'no-ledgers = ##t
+		
 				d d d  d d d d  d d d d  d d ]}
 				\override NoteHead #'transparent = ##f
-				 \override NoteHead #'no-ledgers = ##f	
+					
 				
 	
 	
 			r4
-		  
+		 \override Beam #'grow-direction = #LEFT
 		  
 		  \times 16/14 
 			{d32  [
 			\override NoteHead #'transparent = ##t
-			\override NoteHead #'no-ledgers = ##t
+			
 				d d d  d d d d  d d d d  d d ]}
 				\override NoteHead #'transparent = ##f
-				 \override NoteHead #'no-ledgers = ##f	
+		
+		\override Beam #'grow-direction = #'()		 
 		  
 		  
 \break		  
@@ -120,7 +114,7 @@ g8-. [ 	d8~--]
 		  r4
 		  
 		  
-		  \times 2/3 {d8-. [r8 d8-.]}
+		  \times 2/3 {d8-.\pppp [r8 d8-.]}
 		  \times 2/3 {r8 [d8 d8 ]}
 		  
 		 \times 4/5 {d16 [d d d d ]}
@@ -132,7 +126,7 @@ g8-. [ 	d8~--]
 		 
 			d32_\markup{\italic \small {sempre}} \pp [
 			\override NoteHead #'transparent = ##t
-			\override NoteHead #'no-ledgers = ##t
+			
 				d d d  d d d d  
 				d d d d  d d d d
 				d d d d  d d d d
@@ -140,21 +134,119 @@ g8-. [ 	d8~--]
 				d d d d  d d d d
 				 ]
 				\override NoteHead #'transparent = ##f
-				 \override NoteHead #'no-ledgers = ##f
+				
 		   
 		   \override Beam #'grow-direction = #'()
 
 \break
 
-		  d8-- [d8--]
+<<
+	{
+
+		  d8--^\markup{\italic \small {Solo Ms.}}\p [d8--]
+		  					
+		  					
 		  \crOff
-		  \vibrato #'(3 3 3 ) #3.5
-		  ees1~\startTrillSpan
-		  ees1
-		  r4\stopTrillSpan
+		  \override Hairpin.circled-tip = ##t
+		  \override Stem #'stencil = ##f
+		 
+		  e4~\fermata
+		  
+e4\glissando\> c'4~ \hideNotes c8 s8 \!_\markup{\italic \small {(fino a fine fiato)}}
+		  
+		  \unHideNotes
+		  
+	 }
+	 
+
+
+\new Staff \with {
+	    \remove "Time_signature_engraver"
+      alignAboveContext = #"Vox"
+      fontSize = #-3
+      \override StaffSymbol.staff-space = #(magstep -5)
+      \override StaffSymbol.thickness = #(magstep -5)
+      %\override NoteHead #'transparent = ##t
+      \override NoteHead #'no-ledgers = ##t
+      \override VerticalAxisGroup.default-staff-staff-spacing =
+      #'((basic-distance . 1)
+         (minimum-distance . 1)
+         (padding . 1))
+      
+      \hide Clef 
+	  
+	} { \stopStaff
+		s4
+		
+		\override Staff.StaffSymbol #'line-count = #1
+		\override Stem #'length-fraction = #'0.4
+		\override Beam #'grow-direction = #LEFT
+		\startStaff
+		\bar "|"
+		\stemUp
+		\override NoteHead.style = #'harmonic
+		s8   c16 ([g' 
+		c g c, g
+		c g' c g
+		c, g c, g)] }
+   
+  	 \override Beam #'grow-direction = #'()
+	  
+		
+		
+   
+ >>	  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+\break
+
+
+
+
+		 					 \stopStaff
+	 \revert NoteHead.style
+	 \revert StaffSymbol.staff-space 
+      \revert StaffSymbol.thickness 
+      \override NoteHead #'transparent = ##f
+      \override NoteHead #'no-ledgers = ##f
+      \override Stem #'length-fraction = #'1.4
+       \override Stem #'stencil = ##t
+	   \revert Staff.StaffSymbol #'line-count
+						 	 \startStaff
+		
+							  
+							  
+							  
+		 
+		 
+	a'8
+		 
 		  
 		 
 		  
 
 
 }
+
+
+
+
+
+
+
+
+
+
