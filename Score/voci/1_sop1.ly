@@ -22,7 +22,7 @@ sopIaMusic = \relative c'
 	
 %0:25 
 \override Glissando #'style = #'trill	
-	 g'8_\markup{\dynamic pppp \italic \small { sottovoce } }
+	 g'8\pppp
 	 [	
 	 fis8~] fis2~ 
 	 \times 2/3 {fis4 	g8}	 d4~
@@ -85,16 +85,24 @@ sopIaMusic = \relative c'
 			
 			\crOn
 		
-			cis4\!		r1
+			cis4(		\hideNotes  cis4)\!		
 			\crOff
 			
 			\override Hairpin.circled-tip = ##f
-			
-			
 			\stopStaff
-						\override Staff.StaffSymbol #'line-count = #1
-						\startStaff
-			\hideNotes			
+			\override Staff.StaffSymbol #'line-count = #1
+			\startStaff
+			
+			
+			s2.
+			
+			
+			
+			
+			
+			
+			
+						
 		  
 		 	b1	s4  
 		  	
@@ -102,7 +110,7 @@ sopIaMusic = \relative c'
 		  
 		 				
 						  
-			r4 			  
+			s4^\markup{\italic \small {Voci divise}} 			  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -123,7 +131,13 @@ sopIaMusic = \relative c'
 		   \override Beam #'grow-direction = #'()			  
 
 	
+s1 s4
+s1 s4
+\hideNotes
+c1 s4
+c1 s4
 
+\unHideNotes
 	
 		 	
 		
@@ -153,8 +167,8 @@ sopIIaMusic = \relative c'
 			\unHideNotes	
 		  
 		 				
-						  
-			s4 	r16		  
+			\stemUp			  
+			s4 	s16		  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -200,9 +214,9 @@ sopIIIaMusic = \relative c'
 		  	
 			\unHideNotes	
 		  
-		 				
+		 	\stemUp			
 						  
-			s4 	r8		  
+			s4  	s8		  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -225,3 +239,6 @@ sopIIIaMusic = \relative c'
  		
 		
 }
+
+
+

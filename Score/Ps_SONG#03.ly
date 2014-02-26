@@ -27,7 +27,15 @@
   line-width = 180\mm - 2.0 * 10.16\mm
   
  %slashseparator=========================
-  mySlashSeparator = \markup {  \center-align\vcenter\combine\beam #5.0 #0.5 #0.48\raise #1\beam #5.0 #0.5 #0.48 }  
+  mySlashSeparator = \markup {
+  \center-align
+\vcenter
+\combine
+\beam #5.0 #0.5 #0.48
+\raise #1
+\beam #5.0 #0.5 #0.48
+ }  
+
   
   
   
@@ -35,7 +43,7 @@
   
   annotate-spacing = ##f % stampa le distanze tra gli oggetti < -----------------------------------------------------
     
-  max-systems-per-page = 3
+  max-systems-per-page = 2
   
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -47,8 +55,8 @@
   
   #(include-special-characters)
   
-  oddHeaderMarkup = \markup \fill-line {\override #'(font-name . "Helvetica Neue light") "PS:"}
-  evenHeaderMarkup = \markup \fill-line { " " }
+  oddHeaderMarkup = \markup \fill-line {\override #'(font-name . "Helvetica Neue light") ""}
+  evenHeaderMarkup = \markup \fill-line { "" }
   oddFooterMarkup = \markup { \fill-line {
      \sans \fontsize #1 \on-the-fly #print-page-number-check-first
      \fromproperty #'page:page-number-string } }
@@ -135,6 +143,8 @@ stemLength = #(define-music-function (parser location length) (number?)
   				  \set Staff.instrumentName = #"Mezzosoprano"
     			  \set Staff.shortInstrumentName = "Ms. "
 			   \set Staff.midiInstrument = #"flute"
+			   
+			 %  \new Lyrics \lyricsto "Vox" {\VoxText}
 			   		>>    
 
 
@@ -157,6 +167,9 @@ stemLength = #(define-music-function (parser location length) (number?)
     \set GrandStaff.instrumentName = "Soprani I"
     \set GrandStaff.shortInstrumentName = "S.I"
     \set Staff.midiInstrument = #"violin"
+    
+     			
+			
    				\new Staff = "sop12" {\sopIIaMusic}
 				\new Staff = "sop13" {\sopIIIaMusic}
 				
@@ -213,19 +226,9 @@ stemLength = #(define-music-function (parser location length) (number?)
 		\Staff
 			\RemoveEmptyStaves
 			\override VerticalAxisGroup #'remove-first = ##t
-			\override TimeSignature #'font-size = #5
-			\override VerticalAxisGroup #'minimum-Y-extent = #'(3 . 4)
-			\remove "Bar_number_engraver"
-			\override Beam #'damping = #4 % ------------ 
-			\consists #Span_stem_engraver
-       		
-       		 \override DynamicLineSpanner #'staff-padding = #4.0
- 			 \override DynamicLineSpanner #'Y-extent = #'(-1.5 . 1.5)
- 			 \override TextScript #'Y-extent = #'(-1.5 . 1.5)
-			 \remove Forbid_line_break_engraver
-			 \once \override Beam #'breakable = ##t
-			 \accidentalStyle neo-modern-cautionary
-			 
+			\override TimeSignature #'font-size = #6
+			
+						 			 
 			
 		}
 		
@@ -239,11 +242,26 @@ stemLength = #(define-music-function (parser location length) (number?)
   \Score
   		
   		\autoBeamOff
-  		\time 5/4
+\time 5/4
+		\override VerticalAxisGroup #'minimum-Y-extent = #'(4 . 5)
+		\override DynamicLineSpanner #'staff-padding = #8.0
 		\override SpacingSpanner #'uniform-stretching = ##t
+		\override DynamicLineSpanner #'Y-extent = #'(-3.5 . 3.5)
+ 		\override TextScript #'Y-extent = #'(-3.5 . 3.5)
 		\override Flag #'stencil = #modern-straight-flag
-		\override Stem #'length-fraction = #'1.4
-		 		
+		\override Stem #'length-fraction = #'1.5
+		 
+		\override VerticalAxisGroup.default-staff-staff-spacing =
+      #'((basic-distance . 9)
+         (minimum-distance . 7)
+         (padding . 9))
+		
+		\remove "Bar_number_engraver"
+			\override Beam #'damping = #4 % ------------ 
+			\consists #Span_stem_engraver
+       		\remove Forbid_line_break_engraver
+			\once \override Beam #'breakable = ##t
+			\accidentalStyle neo-modern-cautionary
 
 			
 		}
@@ -260,7 +278,6 @@ stemLength = #(define-music-function (parser location length) (number?)
   
  
   
-  %\midi {}
   
   
 }

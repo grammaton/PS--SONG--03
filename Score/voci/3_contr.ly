@@ -83,9 +83,9 @@ d2		 ees2.~
 						\startStaff
 			
 		  
-		 				
+		 	\stemUp			
 						  
-			r4 	r4	r8	  
+			s4^\markup{\italic \small {Voci divise}}  	s4	s8	  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -105,16 +105,37 @@ d2		 ees2.~
 		   
 		   \override Beam #'grow-direction = #'()
 		  
+
+		  
+s1 s4
+s1 s4
+\hideNotes
+c1 s4
+c1 s4
+
+\unHideNotes		  
 		  
 		  
-		  
-		  
-		  
-		    
-  	
 		
 		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,8 +160,8 @@ contrIIMusic = \relative c'
 			\unHideNotes	
 		  
 		 				
-						  
-			r4 	r4	r8	r16  
+			\stemUp			  
+			s4  	s4	s8	s16  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -167,6 +188,33 @@ contrIIMusic = \relative c'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 contrIIIMusic = \relative c' 
 
 { 
@@ -188,8 +236,9 @@ contrIIIMusic = \relative c'
 			\unHideNotes	
 		  
 		 				
-						  
-			r4 	r4\<\pppp	r4  
+<<
+{						  
+			s4 	s4\<\pppp	s4  
 			\override Beam #'grow-direction = #RIGHT
 		 	\crOn	  
 		 \override NoteHead #'no-ledgers = ##t
@@ -208,6 +257,45 @@ contrIIIMusic = \relative c'
 			\crOff	 
 		   
 		   \override Beam #'grow-direction = #'()
-		
+}
+\\
+{ s4 
+
+				\override NoteHead #'transparent = ##t
+				\override NoteHead #'no-ledgers = ##t
+				\set subdivideBeams = ##t
+				%\override Beam #'beam-thickness = #0.5
+				\override Stem #'french-beaming = ##t
+      			\override Stem #'thickness = #5.0
+				\override Stem #'length-fraction = #'20.0
+				
+	\change Staff = "sop11"		d,16 [
+	\change Staff = "sop12" 	d 
+	\change Staff = "sop13"		d 
+	\change Staff = "sop21"		d]	
+				
+				\override Stem #'length-fraction = #'9.0
+	
+	\change Staff = "sop22"		d16 [
+	\change Staff = "sop23"		d 
+	\change Staff = "contr1"	d
+	\change Staff = "contr2" 	d]
+	
+				\override Stem #'length-fraction = #'3.7
+				
+	\change Staff = "contr3"	g16		
+				\override NoteHead #'transparent = ##f
+				\override NoteHead #'no-ledgers = ##f
+				\override Stem #'length-fraction = #'1.4
+				
+				 
+}
+>>		
 		
 }
+
+
+
+
+
+
