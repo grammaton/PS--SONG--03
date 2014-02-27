@@ -143,12 +143,14 @@ c1 s4
 
 
 
-r2
+s4 
 
 
-\times 2/3 {a'8\pp ([fis g}
-\times 2/3 {a8 fis g]}
-\times 2/3 {a8 fis4~)}
+a'4	(fis4	g4
+
+
+
+\times 2/3 {a4 fis2~)}
 
 fis1\>			r4\!
 

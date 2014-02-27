@@ -149,12 +149,19 @@ g8-. [ 	d8~--]
 		  \crOff
 		  \override Hairpin.circled-tip = ##t
 		  \override Stem #'stencil = ##f
+\once\override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
 		 
 		  e4(\fermata
 		  
-\hideNotes s4\>  s4  e8) s8 \!_\markup{\italic \small {(fino a fine fiato)}}
+\hideNotes s4\>  s4  e8)\!_\markup{\italic \small {(fino a fine fiato)}}
+
+ s8\mark \markup { \musicglyph #"scripts.ufermata" } 
 		  
 		  \unHideNotes
+		  
+		  
+		 
+  
 		  
 	 }
 	 
@@ -231,9 +238,13 @@ g8-. [ 	d8~--]
 							  
 							  
 <<
-{		 
-		 
-	g'!2~-+\mp g2~-+	g4-o ^(
+{	
+			\override Staff.TimeSignature #'stencil = ##f	
+			 \once\override Stem #'stencil = ##f
+\time	1/4		 
+	g'!4~ \fermata\mp
+\time	5/4
+	g!2~-+ g2~-+	g4-o ^(
 	
 \revert Glissando #'style 
 \once\override Glissando #'thickness = #5

@@ -132,7 +132,7 @@ c1 s4
 						\startStaff
 
 
-
+s4
 r1		\times 2/3 { a'8\pp [fis g~]}
 g1\>		r4\!
 

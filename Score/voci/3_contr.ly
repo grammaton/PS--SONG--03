@@ -168,7 +168,7 @@ b16
 \change Staff="sop11"
 b32
 ]
-\breathe
+
 
 \crOff		
 					 \override NoteHead #'no-ledgers = ##f
@@ -179,6 +179,7 @@ b32
 
 						
 \hideNotes
+s4
 c1 c4
 c1 c4
 c1 c4
