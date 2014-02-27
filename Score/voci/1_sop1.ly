@@ -177,17 +177,17 @@ b2\>	r4\!	r2
 
 %PARTEDIGIUSEPPE
 
-gis2~ gis2~ gis4~
-gis2~ gis2~ gis4
-a2~ a2~ a4~
-a2~ a2~ \times 2/3 {a8~[ a8 ais~]}
-ais2~ ais2~ ais4~
-ais2~ ais2~ ais4~
+gis1~ gis4~
+gis1~ gis4
+a1~ a4~
+a1~ \times 2/3 {a8~[ a8 ais~]}
+ais1~ ais4~
+ais1~ ais4~
 ais2 b2~ b4~
-b2~ b2~ b4
-c2~ c2~ c4~
-c2~ c2~ c4~
-c2~ c2~ c4~
+b1~ b4
+c1~ c4~
+c1~ c4~
+c1~ c4~
 c2~ cis2~ cis4
 
 
