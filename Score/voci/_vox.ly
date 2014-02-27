@@ -347,10 +347,22 @@ fis,-.-> g-.->
 \break 
 \bar"||"
 
-gis->^\markup{\small \italic {A tempo}}
-
-
-
+gis->^\markup{\small \italic {A tempo}} r8 r4 r2 r4
+gis4\ppp r4 \acciaccatura{a8} g8->\pp r8 r4 r4
+\acciaccatura{g8} a8-> r8 r4 \times 2/3 {r4 a4 r8[a8]} fis8-> r8
+r2 r2 \times 2/3 {gis8[ fis ais->]}
+\break 
+\times 4/5 {r8 ais8 r8 r8 ais16[ f16 ]} f8-> r8 r4 r4
+r2 r2 r4
+\acciaccatura{ais8} e8-> r8 e8-- r8 \acciaccatura{ais8} b8-> r8 r8 b8-- b4:16
+\acciaccatura{b8} dis,8-> r8 r4 r2 r4
+\break 
+\acciaccatura{ais'8[f r8 a]} c8-> r8 r4 \acciaccatura{ais8[f r8 a f]} d8-> r8 r4 r4 
+r2 \times 4/5 {r8[ fis c' r8 c]} cis8-- r8
+\times 4/7 {c,4\pp\< c4 dis fis a b c\f } cis4--\f 
+cis4--\sfz cis~--\ff cis2~ cis4~
+\break 
+cis2
 
 
 

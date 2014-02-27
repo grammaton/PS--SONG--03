@@ -159,11 +159,18 @@ a4->~\ff					a2\>	r4\!	r2
 
 %PARTEdiGIUSEPPE
 
-gis4
-	 	
-	
-
-	
+gis2~ gis2~ gis4~
+gis2~ gis2~ gis4~
+gis2~ gis2~ a4~
+a2~ a2~ a4
+g2~ g2~ g4~
+g2~ g2~ g4~
+f2~ f2~ f4~
+f2~ f2~ f4~	 	
+f2 dis2~ dis4~	
+dis2~ dis2~ dis4~
+c2~ c2~ c4~
+c2~ c2~ b4
 	
 	
 	

@@ -16,11 +16,15 @@ nchnls	= 2
 0dbfs	= 1
 
         instr 1
-ksweepl linseg	293.6, p4, 338.8, p5, 369.9
-ksweepr linseg	293.6, p4, 338.8, p5, 329.2
+ksweepl linseg	p4, p5, p6, p7, p8
 al      oscili   0dbfs*.707, ksweepl, 1
+        outs1     al
+        endin
+
+        instr 2
+ksweepr linseg	p4, p5, p6, p7, p8
 ar      oscili   0dbfs*.707, ksweepr, 1
-        outs     al, ar
+        outs2     ar
         endin
 
 </CsInstruments>
@@ -30,7 +34,10 @@ ar      oscili   0dbfs*.707, ksweepr, 1
 f1  0   8192    10 1  ; use GEN10 to compute a sine wave
 
 ;ins    strt    dur
-i1      16      44	26	18	
+i1      16      44	293.6	26	338.8	18	369.9
+i2	16      44	293.6	26	338.8	18	329.2
+i1	120	60	415.3	60	554.4
+i2	120	60	415.3	60	246.9
 
 e                     ; indicates the end of the score
 </CsScore>
