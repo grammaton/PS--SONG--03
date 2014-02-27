@@ -130,18 +130,83 @@ sopIaMusic = \relative c'
 		   
 		   \override Beam #'grow-direction = #'()			  
 
-	
-s1 s4
-s1 s4
 \hideNotes
-c1 s4
+	
 c1 s4
 
 \unHideNotes
+
+
+			\stopStaff
+			\revert Staff.StaffSymbol #'line-count
+			\startStaff
+
+
+
+r2
+
+
+\times 2/3 {a'8\pp ([fis g}
+\times 2/3 {a8 fis g]}
+\times 2/3 {a8 fis4~)}
+
+fis1\>			r4\!
+
+
+
+
+r4
+
+r8^\markup{\small \italic {A 2}}  bes8~\ppp
+bes2.~
+
+bes2~\>	bes4\!		r2
+
+r1 r4 
+
+r4^\markup{\small \italic Tutti}
+
+\times 2/3 {r4 b8->} b2->	b4~->\ff	
+b2\>	r4\!	r2	
+
+
+
+%PARTEDIGIUSEPPE
+
+gis4
+
+
+
+
+
+
+
+
 	
-		 	
+	 	
 		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%________________SECONDA VOCE
 
 
 

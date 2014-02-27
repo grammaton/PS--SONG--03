@@ -121,18 +121,46 @@ sopIbMusic = \relative c'
 		   
 		   \override Beam #'grow-direction = #'()
 
-
-
-s1 s4
-s1 s4
 \hideNotes
+	
 c1 s4
-c1 s4
-
 \unHideNotes
 
-		
-		  
+
+						\stopStaff
+						\revert Staff.StaffSymbol #'line-count 
+						\startStaff
+
+
+
+r1		\times 2/3 { a'8\pp [fis g~]}
+g1\>		r4\!
+
+						\stopStaff
+						\override Staff.StaffSymbol #'line-count = #1
+						\startStaff
+						
+\hideNotes
+c1 c4
+c1 c4
+c1 c4
+\unHideNotes
+
+
+						\stopStaff
+						\revert Staff.StaffSymbol #'line-count 
+						\startStaff
+						
+r4		\times 2/3{g8->\f a4->~}	a2
+
+a4->~\ff					a2\>	r4\!	r2
+
+
+
+%PARTEdiGIUSEPPE
+
+gis4
+	 	
 	
 
 	
@@ -144,6 +172,25 @@ c1 s4
 			
 		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

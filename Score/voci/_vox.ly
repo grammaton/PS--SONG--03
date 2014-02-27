@@ -150,9 +150,9 @@ g8-. [ 	d8~--]
 		  \override Hairpin.circled-tip = ##t
 		  \override Stem #'stencil = ##f
 		 
-		  e4~\fermata
+		  e4(\fermata
 		  
-e4\glissando\> c'4~ \hideNotes c8 s8 \!_\markup{\italic \small {(fino a fine fiato)}}
+\hideNotes s4\>  s4  e8) s8 \!_\markup{\italic \small {(fino a fine fiato)}}
 		  
 		  \unHideNotes
 		  
@@ -179,16 +179,16 @@ e4\glissando\> c'4~ \hideNotes c8 s8 \!_\markup{\italic \small {(fino a fine fia
 		s4
 		
 		\override Staff.StaffSymbol #'line-count = #1
-		\override Stem #'length-fraction = #'0.4
+		\override Stem #'length-fraction = #'0.9
 		\override Beam #'grow-direction = #LEFT
 		\startStaff
-		\bar "|"
+\bar "|"
 		\stemUp
 		\override NoteHead.style = #'harmonic
-		s8   c16 ([g' 
-		c g c, g
-		c g' c g
-		c, g c, g)] }
+		s8   c'16 ([g' 
+		c g c,) g(
+		c g' c g)
+		c,( g c, g)] }
    
   	 \override Beam #'grow-direction = #'()
 	  
@@ -230,13 +230,123 @@ e4\glissando\> c'4~ \hideNotes c8 s8 \!_\markup{\italic \small {(fino a fine fia
 							  
 							  
 							  
+<<
+{		 
 		 
+	g'!2~-+\mp g2~-+	g4-o ^(
+	
+\revert Glissando #'style 
+\once\override Glissando #'thickness = #5
+\once\override Stem #'stencil = ##f
+	ees4)\glissando
+	\glissandoSkipOn
+	s2 s4
+	\glissandoSkipOff
+	ees8-.	
 		 
-	a'8
-		 
+}
+\\
+{	s1 s4
+	s2 
+	%\override NoteHead #'transparent = ##t
+	\override Accidental #'stencil = ##f
+	\override Beam #'grow-direction = #RIGHT
+	\crOn
+	e32[ e e e  e e e e]
+	\override Beam #'grow-direction = #LEFT
+  	e32[ e e e  e e e e]
+	\crOff
+	
+	\override Accidental #'stencil = ##t
+	\override NoteHead #'transparent = ##f
+	\override Beam #'grow-direction = #'()
+}
+
+>>
+
 		  
 		 
+													
+r8 
+													\break
+
+r4
+
+\stemUp
+a8 (bes-.->)
+
+r4
+
+<<
+{
+
+
+\times 2/3 {r8 bes4~-+\<}
+bes4~-+
+\revert Glissando #'style
+\override Glissando #'thickness = #5
+
+bes4~^o\glissando		
+\once\override Stem #'stencil = ##f
+bes4\glissando
+\hideNotes \grace{bes8\!}\unHideNotes
+\revert Glissando #'thickness 
+
+}
+\\
+{s4 s4 
+
+s8
+	\override Accidental #'stencil = ##f
+	\override Beam #'grow-direction = #RIGHT
+	\crOn
+	b16[ b b b b b]
+}
+>>
+
+\override Hairpin.circled-tip = ##f
+
+b8\f\>( [aes]
+\times 2/3 {ges4\<) f!8-.\!}
+
+r4
+
+
+														\break
+
+
+f8-.\p r8
 		  
+r4
+\whisperOn
+\times 2/3 {f4( f8-.)} 
+\whisperOff
+
+\times 4/5 {r4 r8 f4\p\< }
+
+g8->\f [e8->~]
+e2~ e4\<(
+
+c'4~\!)->\>
+c2~\startTrillSpan\< c4 \grace{s8\stopTrillSpan}
+
+b8\f-.->^\markup{\small \italic{marcato e rit.}} c-.-> 
+fis,-.-> g-.->
+
+\break 
+\bar"||"
+
+gis->^\markup{\small \italic {A tempo}}
+
+
+
+
+
+
+
+
+
+
 
 
 }
