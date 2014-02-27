@@ -98,27 +98,122 @@ d2		 ees2.~
 				  
 				
 				 ]
-				\override NoteHead #'transparent = ##f
-				 \override NoteHead #'no-ledgers = ##f
+			
 				 
-			\crOff	 
-		   
+			 
+		   \override NoteHead #'transparent = ##f
 		   \override Beam #'grow-direction = #'()
 		  
 
-		  
-s1 s4
-s1 s4
-\hideNotes
-c1 s4
-c1 s4
+s4\pp
 
-\unHideNotes		  
+\set stemRightBeamCount = #3
+
+b'8 [	s16 
+
+
+
+\change Staff="sop11"
+
+b32		s32 
+
+\change Staff="sop21"
+b16] s16 [
+
+
+
+\change Staff="sop11"
+
+b32 
+\change Staff="contr1"
+b8 
+
+\change Staff="sop21"
+
+s32]
+\grace{b8 [
+\change Staff="contr1"
+b32
+\change Staff="sop21"
+b8
+\change Staff="sop11"
+b32]}
+\change Staff="contr1"
+s32[	b32
+
+
+\change Staff="sop21"
+b16 ] 
+
+\set stemRightBeamCount = #1
+
+\change Staff="sop11"
+b16 [s8 
+\change Staff="contr1"
+\grace {b8 [
+\change Staff="sop21"
+b32
+\change Staff="sop11"
+b8
+\change Staff="contr1"
+b16
+\change Staff="sop21"
+b8]}
+\change Staff="contr1"
+b32
+
+
+\change Staff="sop21"
+b16
+\change Staff="sop11"
+b32
+]
+
+
+\crOff		
+					 \override NoteHead #'no-ledgers = ##f
+				 	  
+
+\change Staff="contr1"	
+	 		  
+
+						
+\hideNotes
+s4
+c1 c4
+c1 c4
+c1 c4
+c1 c4
+c1 c4
+
+\unHideNotes
+
+
+						\stopStaff
+						\revert Staff.StaffSymbol #'line-count 
+						\startStaff
 		  
 		  
-		
+r4
+
+g4~->\f	g2
+
+f!4->\ff
+
+
+fis2\>				r4\!			r2
+
+
+%parteDIgiuseppe
+
+
+
+gis4		
 		
 }
+
+
+
 
 
 
