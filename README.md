@@ -1,6 +1,7 @@
 #PS: SONG#03
 
 *Electroacoustic music for Mezzosoprano & SSA Choir*
+
 Music By [https://soundcloud.com/paxxx](Paquale Citera) & [https://soundcloud.com/giuseppe-silvi](Giuseppe Silvi)
 
 ###License
@@ -17,7 +18,11 @@ Music By [https://soundcloud.com/paxxx](Paquale Citera) & [https://soundcloud.co
 ###Disposition
 
 ..........L1.........
+
 ..........C..........
+
 .....L2........L3....
+
 S1.................S2
+
 L4...Ms............L5
