@@ -2,7 +2,7 @@
 
 *Electroacoustic music for Mezzosoprano & SSA Choir*
 
-Music By [Paquale Citera](https://soundcloud.com/paxxx) & [https://soundcloud.com/giuseppe-silvi](Giuseppe Silvi)
+Music By [Paquale Citera](https://soundcloud.com/paxxx) & [Giuseppe Silvi](https://soundcloud.com/giuseppe-silvi)
 
 ###License
 
