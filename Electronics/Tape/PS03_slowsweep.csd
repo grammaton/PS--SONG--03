@@ -36,8 +36,8 @@ f1  0   8192    10 1  ; use GEN10 to compute a sine wave
 ;ins    strt    dur
 i1      16      44	293.6	26	338.8	18	369.9
 i2	16      44	293.6	26	338.8	18	329.2
-i1	120	60	415.3	60	554.4
-i2	120	60	415.3	60	246.9
+i1	120	57.5	415.3	57.5	554.4
+i2	120	57.5	415.3	57.5	246.9
 
 e                     ; indicates the end of the score
 </CsScore>

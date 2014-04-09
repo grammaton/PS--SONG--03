@@ -4,18 +4,31 @@
 
 Music By [Paquale Citera](https://soundcloud.com/paxxx) & [Giuseppe Silvi](https://soundcloud.com/giuseppe-silvi)
 
+###Testo
+######*Candentibus organis, Caecilia virgo in corde suo soli Domino decantabat dicens: Fiat Domine cor meum et corpus meum immaculatum ut non confundar*
+
+*Tra gli gli strumenti di tortura incandescenti,la vergine Cecilia cantava a Dio nel suo cuore dicendo: “Signore, il mio cuore e il mio corpo siano immacolati affinché io non sia confusa”*
+
 ###To do list:
 - [ ] Complete Techinal Specificatione
 - [ ] Complete Stage Disposition
 
 ###Technical Specifications 
-* 5 on stage loudspeakers with stands
-* 1 condenser voice microphone for Mezzosoprano
-* 3 condenser coardioid microphone for choir
-* 1 laptop
+* 3 on stage fullrange loudspeakers with stands (Genelec 8240a)
+* 2 on stage subwoofer 500*W*
+* 2 laptop
+* 2 RME Fireface
 * 1 digital mixer
 
 ###Disposition
+
+###Low pitched sine wave
+
+08/04/2013
+
+aula 13 del III piano del Conservatorio
+
+Test di diffusione di onde triangolari a frequenze molto gravi (intorno a 27.5*Hz*) mediante il Subwoofer Genelec 7271A da 500. Il test aveva lo scopo di fissare alcune idee sulla scrittura di un coro di sinusoidi modulate in ampiezza. Ma il test ha rivelato che l'inda triangolare diffusa dal subwoofer ha caratteristiche di potenza e propagazione tali da far perdere l'interesse per la modulaizone di ampiezza. La conclusione del test è stata che sul fondo del palco verranno installati due sobwoofer e da questi verranno diffuse due oscillazioni triangolari distinte.
 
 ###License
 
